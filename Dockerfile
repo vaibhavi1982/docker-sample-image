@@ -17,6 +17,6 @@ ENV GIT_SHA $VCS_REF
 ENV GOPATH /go
 RUN cd $GOPATH/src/github.com/voronenko-p/docker-sample-image && go install -v .
 
-CMD ["croc-hunter"]
+CMD ["docker-sample-image"]
 
 EXPOSE 8080
